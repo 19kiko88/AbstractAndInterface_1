@@ -7,7 +7,16 @@ using System.Threading.Tasks;
 namespace AbstractAndInterface
 {
     public abstract class Car
-    {       
+    {
+        private string name = string.Empty;
+
+        public string Name { get { return name; } set { name = value; } }
+
+        public Car(string paraName)
+        {
+            name = paraName;
+        }
+
         public abstract string Run();
 
         //導航

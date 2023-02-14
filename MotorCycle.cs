@@ -8,6 +8,8 @@ namespace AbstractAndInterface
 {    
     public class MotorCycle : Car, ICar
     {
+        public MotorCycle(string name) : base(name) { }
+
         public override string Run()
         {
             return "時速可達70公里";

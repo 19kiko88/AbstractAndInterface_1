@@ -9,6 +9,8 @@ namespace AbstractAndInterface
     //汽車
     public class AutoMobile: Car
     {
+        public AutoMobile(string name):base(name) { }
+
         public override string Run() 
         {
             return "時速可達100公里";

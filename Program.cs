@@ -3,17 +3,21 @@ using AbstractAndInterface;
 
 //Console.WriteLine("Hello, World!");
 
-var autoMobile = new AutoMobile();
-Console.WriteLine(autoMobile.Run());
-Console.WriteLine(autoMobile.Navigation());
+var autoMobile = new AutoMobile("汽車");
+Console.WriteLine($"{autoMobile.Name}{autoMobile.Run()}");
+Console.WriteLine($"{autoMobile.Name}{autoMobile.Navigation()}");
+Console.WriteLine();
 
-var bicycle = new Bicycle();
-Console.WriteLine(bicycle.Run());
-Console.WriteLine(bicycle.Navigation());
 
-MotorCycle motorCycle = new MotorCycle();
-Console.WriteLine(motorCycle.Run());
-Console.WriteLine(motorCycle.Navigation());
+var bicycle = new Bicycle("腳踏車");
+Console.WriteLine($"{bicycle.Name}{bicycle.Run()}");
+Console.WriteLine($"{bicycle.Name}{bicycle.Navigation()}");
+Console.WriteLine();
+
+MotorCycle motorCycle = new MotorCycle("摩托車");
+Console.WriteLine($"{motorCycle.Name}{motorCycle.Run()}");
+Console.WriteLine($"{motorCycle.Name}{motorCycle.Navigation()}");
+Console.WriteLine();
 
 Console.ReadLine();
 

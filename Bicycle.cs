@@ -8,6 +8,8 @@ namespace AbstractAndInterface
 {    
     public class Bicycle: Car
     {
+        public Bicycle(string name) : base(name) { }
+
         public override string Run() 
         {
             return "時速可達30公里";
