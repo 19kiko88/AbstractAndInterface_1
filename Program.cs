@@ -8,7 +8,6 @@ Console.WriteLine($"{autoMobile.Name}{autoMobile.Run()}");
 Console.WriteLine($"{autoMobile.Name}{autoMobile.Navigation()}");
 Console.WriteLine();
 
-
 var bicycle = new Bicycle("腳踏車");
 Console.WriteLine($"{bicycle.Name}{bicycle.Run()}");
 Console.WriteLine($"{bicycle.Name}{bicycle.Navigation()}");
